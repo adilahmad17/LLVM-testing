@@ -48,7 +48,12 @@ using namespace llvm;
 namespace {
   struct Overwatch : public FunctionPass {
     static char ID;
-    Overwatch() : FunctionPass(ID) {}
+    Overwatch() : FunctionPass(ID) {
+      errs() << "Applying Overwatch Pass!\n";
+      errs() << "TODO: (a) remove the runtime of ThreadSan\n" <<
+                "(b) Check if the function contains a thread locking mechanism\n"
+                << "(c) Apply SFV to find the creation of the heap variables\n";
+    }
     bool runOnFunction(Function &F) override {
       errs() << "Hello: ";
       errs().write_escaped(F.getName()) << '\n';
