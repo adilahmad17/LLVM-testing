@@ -678,6 +678,7 @@ lltok::Kind LLLexer::LexIdentifier() {
   KEYWORD(sanitize_hwaddress);
   KEYWORD(sanitize_thread);
   KEYWORD(sanitize_memory);
+  KEYWORD(sanitize_overwatch);
   KEYWORD(swifterror);
   KEYWORD(swiftself);
   KEYWORD(uwtable);

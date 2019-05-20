@@ -343,6 +343,8 @@ std::string Attribute::getAsString(bool InAttrGrp) const {
     return "sanitize_thread";
   if (hasAttribute(Attribute::SanitizeMemory))
     return "sanitize_memory";
+  if (hasAttribute(Attribute::SanitizeOverwatch))
+    return "sanitize_overwatch";
   if (hasAttribute(Attribute::UWTable))
     return "uwtable";
   if (hasAttribute(Attribute::ZExt))

@@ -139,6 +139,9 @@ FunctionPass *createHWAddressSanitizerPass(bool CompileKernel = false,
 // Insert ThreadSanitizer (race detection) instrumentation
 FunctionPass *createThreadSanitizerPass();
 
+// Insert Overwatch (race detection) instrumentation
+FunctionPass *createOverwatchPass();
+
 // Insert DataFlowSanitizer (dynamic data flow analysis) instrumentation
 ModulePass *createDataFlowSanitizerPass(
     const std::vector<std::string> &ABIListFiles = std::vector<std::string>(),

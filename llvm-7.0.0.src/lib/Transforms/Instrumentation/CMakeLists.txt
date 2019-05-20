@@ -14,6 +14,7 @@ add_llvm_library(LLVMInstrumentation
   ThreadSanitizer.cpp
   EfficiencySanitizer.cpp
   HWAddressSanitizer.cpp
+  Overwatch.cpp
 
   ADDITIONAL_HEADER_DIRS
   ${LLVM_MAIN_INCLUDE_DIR}/llvm/Transforms

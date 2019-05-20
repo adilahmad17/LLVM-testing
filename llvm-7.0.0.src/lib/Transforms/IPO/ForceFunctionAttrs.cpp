@@ -58,6 +58,7 @@ static Attribute::AttrKind parseAttrKind(StringRef Kind) {
       .Case("sanitize_hwaddress", Attribute::SanitizeHWAddress)
       .Case("sanitize_memory", Attribute::SanitizeMemory)
       .Case("sanitize_thread", Attribute::SanitizeThread)
+      .Case("sanitize_overwatch", Attribute::SanitizeOverwatch)
       .Case("ssp", Attribute::StackProtect)
       .Case("sspreq", Attribute::StackProtectReq)
       .Case("sspstrong", Attribute::StackProtectStrong)
